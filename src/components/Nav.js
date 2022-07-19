@@ -1,12 +1,18 @@
-import React, { useState } from "react";
-import {Link} from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import {Link, useLocation} from "react-router-dom";
 import {CgMenu} from "react-icons/cg"
 
 function Nav () {
     const [expandNav, setExpandNav] = useState(false);
 
+    const location = useLocation();
+
+    useEffect(() => {
+        setExpandNav(false)
+    }, [location]);
+
     return (
-        <div className="nav">
+        <div className="nav" id={expandNav ? "open" : "close"}>
             <div className="toggleButton">
                 <button onClick={() => {
                     setExpandNav((prev) => !prev);
