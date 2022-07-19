@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import {Link} from "react-router-dom";
+import {CgMenu} from "react-icons/cg"
 
 function Nav () {
+    const [expandNav, setExpandNav] = useState(false);
+
     return (
         <div className="nav">
             <div className="toggleButton">
-                <button></button>
+                <button onClick={() => {
+                    setExpandNav((prev) => !prev);
+                    }}
+                    >
+                    <CgMenu />
+                </button>
             </div>
             <div className="links">
                 <Link to="/">Home</Link>
