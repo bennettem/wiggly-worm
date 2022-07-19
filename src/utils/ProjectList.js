@@ -5,7 +5,7 @@ import robot from "../assets/robot.png";
 import where2 from "../assets/where2.png";
 
 
-export const projectList = [
+export const ProjectList = [
     {
         image: codingNkolbolds,
         alt: "Coding N Kolbods D&D",
@@ -46,4 +46,4 @@ export const projectList = [
         url: "https://bennettem.github.io/guess-num/",
         git: "https://github.com/bennettem/guess-num"
     },
-])
+];

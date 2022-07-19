@@ -2,6 +2,7 @@ import React from "react";
 import {useParams} from "react-router-dom";
 import {ProjectList} from "../utils/ProjectList";
 import {FaGithub} from "react-icons/fa";
+import {CgWebsite} from "react-icons/cg";
 
 
 function ProjectDisplay () {
@@ -18,7 +19,10 @@ function ProjectDisplay () {
             <p>
                 <b>Description:</b> {project.description}
             </p>
-            <FaGithub />
+
+            <FaGithub /> {project.git}
+            <CgWebsite /> {project.url}
+        
         </div>
     );
 }
