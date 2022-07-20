@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {Link, useLocation} from "react-router-dom";
+import { NavLink, useLocation} from "react-router-dom";
 import {CgMenu} from "react-icons/cg"
 
 function Nav () {
@@ -22,10 +22,10 @@ function Nav () {
                 </button>
             </div>
             <div className="links">
-                <Link to="/">Home</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
-                <Link to="/resume">Resume</Link>
+            <NavLink to="/" activeClassName="highlighted">Home</NavLink>
+                <NavLink to="/projects" activeClassName="highlighted">Projects</NavLink>
+                <NavLink to="/contact" activeClassName="highlighted">Contact</NavLink>
+                <NavLink to="/resume" activeClassName="highlighted">Resume</NavLink>
             </div>
         </div>
     );

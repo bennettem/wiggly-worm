@@ -12,7 +12,7 @@ function ProjectDisplay () {
     return (
         <div className="project">
             <h1> {project.name} </h1>
-            <img src={project.image} alt={project.alt}/>
+            <img src={project.image} alt={project.alt} width="700px"/>
             <p>
                 <b>Skills:</b> {project.tech}
             </p>
@@ -20,8 +20,11 @@ function ProjectDisplay () {
                 <b>Description:</b> {project.description}
             </p>
 
-            <FaGithub /> {project.git}
-            <CgWebsite /> {project.url}
+            <a href={project.git} target="blank"><FaGithub />
+            </a>
+            <a href={project.url} target="blank">
+            <CgWebsite /> 
+            </a>
         
         </div>
     );
