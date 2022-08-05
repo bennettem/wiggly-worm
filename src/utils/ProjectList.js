@@ -3,6 +3,7 @@ import dice from "../assets/dice.png";
 import number from "../assets/number.png";
 import robot from "../assets/robot.png";
 import where2 from "../assets/where2.png";
+import jessieslist from "../assets/jessieslist.png"
 
 
 export const ProjectList = [
@@ -45,5 +46,13 @@ export const ProjectList = [
         tech: "(JavaScript / HTML, CSS)",
         url: "https://bennettem.github.io/guess-num/",
         git: "https://github.com/bennettem/guess-num"
+    },
+    {
+        image: jessieslist,
+        alt: "Chore application",
+        description: "A chore application making chore lists simple and easy",
+        tech: "(MongoDB, Apollo, React)",
+        url: "https://nameless-inlet-86757.herokuapp.com/",
+        git: "https://github.com/thetinaest/chores-app"
     },
 ];
