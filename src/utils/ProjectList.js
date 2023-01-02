@@ -10,7 +10,7 @@ export const ProjectList = [
     {
         image: codingNkolbolds,
         alt: "Coding N Kolbods D&D",
-        description: "A site where you can create and change characters for dungeon & dragons use.",
+        description: "A platform where a user can develop and save their own roleplaying characters. A user simply signs in or creates a login to store all their characters. Not only does the user have the ability to choose what they want their character to look like, they can also chose things such as gender, ability, and create a bio. A handy platform to safely and easily store all your rpg mods.",
         tech: "(JavaScript / Node / MySQL / Handlebars)",
         url: "https://codingnkobolds.herokuapp.com/",
         git: "https://github.com/bennettem/coding-n-kobolds"
